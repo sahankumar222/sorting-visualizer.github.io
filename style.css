@@ -24,10 +24,12 @@ body {
 .row{
     display: flex;
     grid-template-columns: 1fr 1fr 2fr;
+    
 }
 
 #input{
     display: flex;
     padding: 10px;
     justify-content: space-around;
+    
 }
