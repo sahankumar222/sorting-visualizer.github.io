@@ -33,3 +33,13 @@ body {
     justify-content: space-around;
     
 }
+#bar{
+margin: 10px;
+background-color: bisque;
+}
+.newBars{
+    background-color: yellow;
+    border: 1pt solid black;
+    width: 10px;
+    transition: 0.1s all ease;
+}

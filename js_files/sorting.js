@@ -88,16 +88,20 @@ function createNewArray(noOfBars = 60) {
     deleteChild();
 
     // create an array of random numbers 
-    array = [];
+    let arr1 = [];
+    for (let i = 0; i < 101; i++) {
+        let a = Math.floor(Math.random() * 100)
+        arr1.push(a);
+    }
     // select the div #bars element
     const bars = document.querySelector("#bars");
 
     // create multiple element div using loop and adding class 'bar col'
     for (let i = 0; i < noOfBars; i++) {
-        //create element
-        // update height of bar
-        // add appropriate styling class to the element
-        // add element to the DOM by appending to the div #bars
+        let ele = document.createElement('div');//create element
+        ele.style.height = `${arr1[i] * 4}px`;// update height of bar
+        bars.appendChild(ele);// add appropriate styling class to the element
+        ele.classList.add("newBars");// add element to the DOM by appending to the div #bars
     }
 }
 
