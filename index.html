@@ -18,25 +18,18 @@
                 <button type="button" onclick="createNewArray()" class="btn btn-outline-success btn-dark newArray">New Array</button></div>
             <div class="col" id="input">
                 <span id="Size">Size
-                    <input type="range" min="7" max="150" step="1" value="55" id="arr_sz"></span>
+                    <input type="range" min="5" max="100" step="1" value="50" id="arr_sz"></span>
                 <span id="speed">Speed
-                    <input id="speed_input" type="range" min="22" max="350" stepDown=10 value=55></span>
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60></span>
             </div>
-            <div class="col gap-2 d-sm-flex" id="bubble sort">
+            <div class="col gap-2 d-sm-flex container" id="bubble sort">
                 <button type="button" onclick="bubble()" class="btn btn-outline-success btn-dark bubble sort">Bubble sort</button>
-            </div>
-                <div class="col gap-2 d-sm-flex" id="selection sort">
-                    <button type="button" onclick="selection()" class="btn btn-outline-success btn-dark selection sort">Selection sort</button>
+                <button type="button" onclick="selection()" class="btn btn-outline-success btn-dark selection sort">Selection sort</button>
+                <button type="button" onclick="insertion()" class="btn btn-outline-success btn-dark insertion sort">Insertion sort</button>
+                <button type="button" class="btn btn-outline-success btn-dark quick sort">Quick sort</button>
+                <button type="button" class="btn btn-outline-success btn-dark merge sort">Merge sort</button>
                 </div>
-                <div class="col gap-2 d-sm-flex" id="insertion sort">
-                    <button type="button" onclick="insertion()" class="btn btn-outline-success btn-dark insertion sort">Insertion sort</button>
-                </div>
-                <div class="col gap-2 d-sm-flex" id="quick sort">
-                    <button type="button" class="btn btn-outline-success btn-dark quick sort">Quick sort</button>
-                </div>
-                <div class="col gap-2 d-sm-flex" id="merge sort">
-                    <button type="button" class="btn btn-outline-success btn-dark merge sort">Merge sort</button>
-                </div>
+            
             </div>
         </nav>
 

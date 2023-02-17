@@ -43,3 +43,6 @@ background-color: bisque;
     width: 10px;
     transition: 0.1s all ease;
 }
+.container{
+    float: right;
+}

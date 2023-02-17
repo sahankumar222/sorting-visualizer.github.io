@@ -59,7 +59,9 @@ function waitforme(milisec) {
 // Selecting size slider from DOM
 let arraySize = document.querySelector('#arr_sz');
 // add Event listener to update the bars on the UI
-
+console.log(arraySize.value);
+var noOfBars= arraySize.value;
+arraySize.addEventListener('change',()=>{createNewArray(document.querySelector('#arr_sz').value)});
 
 // Default input for waitforme function (260ms)
 let delay = 260;
